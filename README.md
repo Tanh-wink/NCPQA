@@ -1,14 +1,16 @@
 English | [简体中文](README_zh.md)
 
-## Datafountain平台-疫情政务问答助手竞赛
-[比赛官网](https://www.datafountain.cn/competitions/424)  
-## 数据说明
-数据包含3个文件，corpus.csv, train.csv, test.csv.
+## Datafountain-Epidemic government affairs quiz assistant competition
+[Competition Official](https://www.datafountain.cn/competitions/424)  
+## Data Declaration
+Contain 3 files: corpus.csv, train.csv, test.csv.
 
-1.corpus.csv 政策文件内容，使用UTF-8编码，用Tab分隔。  
-字段名称	字段说明  
-docid	政策文件id  
-text	政策内容  
+1.corpus.csv: content of the policy file, UTF-8, separated by Tab.  
+
+|字段名称	|字段说明  |
+|  ----  | ----  |
+|docid	|政策文件id |
+|text	|政策内容  |
 
 2.train.csv：训练集，使用UTF-8编码，用Tab分隔。  
 字段名称	字段说明  
