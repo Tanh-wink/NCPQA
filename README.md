@@ -1,6 +1,5 @@
 English | [简体中文](README_zh.md)
-# NCPQA  
-## Datafountain平台-疫情政务问答助手竞赛
+## Datafountain平台-疫情政务问答助手竞赛NCPQA
 [比赛官网](https://www.datafountain.cn/competitions/424)  
 ## 数据说明
 数据包含3个文件，corpus.csv, train.csv, test.csv.
