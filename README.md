@@ -7,7 +7,7 @@ Contain 3 files: corpus.csv, train.csv, test.csv.
 
 1.corpus.csv: content of the policy file, UTF-8, separated by Tab.  
 
-|字段名称	|字段说明  |
+|Fieldname|Field Description  |
 |  ----  | ----  |
 |docid	|政策文件id |
 |text	|政策内容  |
