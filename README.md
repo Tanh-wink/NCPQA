@@ -1,4 +1,4 @@
-<p align="right">English | [简体中文](README_zh.md)</p>
+<p align="right"> English | [简体中文](README_zh.md)  </p>
 
 ## Datafountain平台-疫情政务问答助手竞赛
 [比赛官网](https://www.datafountain.cn/competitions/424)  
