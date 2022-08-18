@@ -1,7 +1,7 @@
 English | [简体中文](README_zh.md)
 
 ## Datafountain-Epidemic government affairs quiz assistant competition
-[Competition Official](https://www.datafountain.cn/competitions/424)  
+[Official Competition](https://www.datafountain.cn/competitions/424)  
 ## Data Declaration
 Contain 3 files: corpus.csv, train.csv, test.csv.
 
