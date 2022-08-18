@@ -9,29 +9,29 @@ Contain 3 files: corpus.csv, train.csv, test.csv.
 
 |Fieldname|Field Description  |
 |  ----  | ----  |
-|docid	|政策文件id |
-|text	|政策内容  |
+|docid	|Policy document's id |
+|text	|Content of the Policy document  |
 
 2.train.csv：train set，UTF-8，separated by Tab. 
 |Fieldname|Field Description  |
 |  ----  | ----  |
-|qid	|训练问题的id |
-|query	|用户查询的问题 |
-|docid	|答案参考的政策文件id | 
-|answer	|答案 |
+|qid	|query id |
+|query	|user's query |
+|docid	|Id of Policy document containing answer text | 
+|answer	|answer text |
 
 3.test.csv：test set，UTF-8，separated by Tab. 
 |Fieldname|Field Description  |
 |  ----  | ----  |
-|qid|	测试问题的id |
-|query|	用户查询的问题 | 
+|qid|	query id |
+|query|	user's query | 
 
-提交测试格式为csv格式，UTF-8，separated by Tab.  
+Submit file is a csv file，encoding by UTF-8，separated by Tab.  
 |Fieldname|Field Description  |
 |  ----  | ----  |
-|qid	|测试问题的id  |
-|docID|	提交答案所在的政策文件id | 
-|answer|	预测的答案  | 
+|qid	|query id  |
+|docID|	Id of Policy document containing answer text | 
+|answer|	answer text  | 
 
 ## Mission Introduction
 给定的8943条政策文件， 根据用户问题，先在8900多条数据中检索出答案所在的政策文件，再对检索出来的政策文件进行提取答案片段作为回答返回给用户。  
