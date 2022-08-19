@@ -40,15 +40,15 @@ According to user questions, the policy document containing the answer span is r
 We divided this task into two parts: document retrieval and answer extraction
 
 1. Document Retrieval  
-  采用 BM25 检索算法和es 根据用户问题进行检索出相关性 top10 政策文件。 
-  预处理8943文档，按字分割，并得到对应词性。
+  use BM25 model and es to retrieve relevant top10 policy documents containing answer from 8932 epidemic policy documents according to user question. 
+  For preprocessed 8943 documents, they were segmented by word. And get the corresponding part of speech of each word.
 2. Answer Extraction  
   对top10 政策文件通过滑动窗口切成成若干子文档，然后与用户问题拼接输入到模型中进行答案抽取。
   选取 Albert 作为最终机器阅读理解模型。通过结合多任务训练、 答案选择与模型融合等技术对模型进行优化。
 
 ## Model
-Albert为baseline，改进策略：多任务训练、 答案选择。  
-最后10折交叉，然后模型融合。
+We choose Albert as the baseline, and optimize the model by combining multiple strategies such as multi-task training and answer selection.  
+Then use 10-fold cross training, and finally model fusion.
 
 ## Criterion  
   Rouge-L：0.7044
