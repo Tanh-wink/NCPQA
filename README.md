@@ -3,7 +3,7 @@ English | [简体中文](README_zh.md)
 ## Datafountain-Epidemic government affairs quiz assistant competition
 [Official Competition](https://www.datafountain.cn/competitions/424)  
 ## Data Declaration
-Contain 3 files: corpus.csv, train.csv, test.csv.
+Contains 3 files: corpus.csv, train.csv, test.csv.
 
 1.corpus.csv: content of the policy file, UTF-8, separated by Tab.  
 
@@ -34,14 +34,15 @@ Submit file is a csv file，encoding by UTF-8，separated by Tab.
 |answer|	answer text  | 
 
 ## Mission Introduction
-给定的8943条政策文件， 根据用户问题，先在8900多条数据中检索出答案所在的政策文件，再对检索出来的政策文件进行提取答案片段作为回答返回给用户。  
+According to user questions, the policy document containing the answer span is retrieved from 8943 policy documents, and then the answer span is extracted from the retrieved policy document and returned to the user as an answer.
 
 ## Implementation Details
-本任务将其分为两部分：检索文件和问答抽取
-1. 检索部分  
+We divided this task into two parts: document retrieval and answer extraction
+
+1. Document Retrieval  
   采用 BM25 检索算法和es 根据用户问题进行检索出相关性 top10 政策文件。 
   预处理8943文档，按字分割，并得到对应词性。
-2. 问答抽取  
+2. Answer Extraction  
   对top10 政策文件通过滑动窗口切成成若干子文档，然后与用户问题拼接输入到模型中进行答案抽取。
   选取 Albert 作为最终机器阅读理解模型。通过结合多任务训练、 答案选择与模型融合等技术对模型进行优化。
 
