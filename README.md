@@ -43,9 +43,7 @@ We divided this task into two parts: document retrieval and answer extraction
   Use BM25 model and es to retrieve relevant top10 policy documents containing answer from 8932 epidemic policy documents according to user question. 
   For preprocessed 8943 documents, they were segmented by word. And get the corresponding part of speech of each word.
 2. Answer Extraction  
-The top10 policy files are cut into several sub documents through sliding windows. Then user question and sub document are concatenated as input of model for answer extraction.
-
-Albert is selected as the final machine reading comprehension baseline model. The model is optimized by combining multi task training, answer selection and model fusion.
+The top10 policy files are cut into several sub documents through sliding windows. Then user question and sub document are concatenated as input of model for answer extraction.  Albert is selected as the final machine reading comprehension baseline model. The model is optimized by combining multi task training, answer selection and model fusion.
 
 ## Model
 We choose Albert as the baseline, and optimize the model by combining multiple strategies such as multi-task training and answer selection.  
