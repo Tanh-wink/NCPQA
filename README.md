@@ -50,5 +50,5 @@ We choose Albert as the baseline, and optimize the model by combining multiple s
 Then use 10-fold cross training, and finally model fusion.
 
 ## Criterion  
-   top10 acc： 0.87, Rouge-L：0.7044
+   top10 acc：0.87, Rouge-L：0.7044
   
